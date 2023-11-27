@@ -1,0 +1,14 @@
+Package: robsentiment
+Title: Performs Basic Text cleaning and Sentiment Analysis
+Version: 0.0.0.9000
+Authors@R: person("Robert", "Levine", email = "levine1@usf.edu", role = c("aut", "cre"))
+Description: rob_text cleans your text by making all the characters lowercase, removing numbers, removing multiple spaces, and removing punctuation. rob_sentiment_scores returns a value from -5 to 5 indicating the sentiment of your text. rob_stopwords removes stopwords from text. rob_token tokenizes your text and rob_cloud creates a wordcloud that differentiates the postive and negative words.
+License: GPL-3
+Imports:
+    tidytext,
+    tm,
+    wordcloud,
+    RColorBrewer
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3.9000
