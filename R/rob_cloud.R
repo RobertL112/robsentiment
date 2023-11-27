@@ -25,7 +25,7 @@ rob_cloud <- function(text){
   tokenized_text <- rob_token(text)
 
   word_freq <- table(tokenized_text)
-  word_freq <- word_freq[word_freq >= min.freq]
+  word_freq <- word_freq[word_freq >= 2]
 
   #get sentiment scores
   sentiment_scores <- afinn[afinn$word %in% names(word_freq),]
