@@ -31,7 +31,7 @@ rob_cloud <- function(text){
   sentiment_scores <- afinn[afinn$word %in% names(word_freq),]
 
   colors <- ifelse(sentiment_scores$value > 0, "green",
-            ifelse(sentiment_scores$value < 0, "red"))
+            ifelse(sentiment_scores$value < 0, "red", "black"))
 
   names(colors) <- sentiment_scores$word
 
