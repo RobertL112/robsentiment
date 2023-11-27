@@ -14,7 +14,7 @@
 rob_sentiment_score <- function(text){
   sentiment <- get_sentiments("afinn")
   tokenized_text <- rob_token(text)
-  sentiment_score <- sum(sentiment$value[sentiment$word %in% tokenized_text])
+  sentiment_score <- mean(sentiment$value[sentiment$word %in% tokenized_text])
 
   return(sentiment_score)
 }
